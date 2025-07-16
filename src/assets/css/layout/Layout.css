@@ -1,0 +1,67 @@
+.logo-font {
+  font-family: "Garamond", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.1rem;
+}
+
+.bg-ivory {
+  background-color: #f9f9f9;
+}
+
+.btn-gradient {
+  background: #42474a;
+  color: white;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: #303436;
+  color: white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.custom-navbar .navbar-toggler {
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+}
+
+@media (max-width: 991.98px) {
+  .custom-navbar .navbar-collapse.show {
+    align-items: flex-start;
+  }
+
+  .custom-navbar .navbar-nav .nav-link {
+    width: fit-content;
+    padding-left: 0;
+    padding-right: 0;
+    color: #6c757d;
+    border-bottom: 2px solid transparent;
+
+    text-decoration: none !important;
+  }
+
+  .custom-navbar .navbar-nav .nav-link:hover {
+    color: #343a40;
+  }
+
+  .custom-navbar .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #212529;
+    border-bottom-color: #343a40;
+  }
+
+  .custom-navbar .navbar-nav .nav-item {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .custom-navbar .navbar-nav .nav-item .btn {
+    margin-left: 0;
+  }
+}

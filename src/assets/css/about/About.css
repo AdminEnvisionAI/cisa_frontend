@@ -1,0 +1,184 @@
+.about-page-ivory {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-ivory);
+}
+
+.about-intro-section {
+  padding: 6rem 0;
+  background-color: white;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.about-main-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800 !important;
+  font-size: 3.2rem;
+  color: var(--dark-color);
+}
+
+.about-intro-text {
+  max-width: 700px;
+  margin: 1rem auto 0;
+}
+
+.about-details-section {
+  padding: 1rem 0;
+}
+
+.about-sub-heading {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #adb5bd;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.about-name-ivory {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800 !important;
+  color: var(--dark-color);
+  font-size: 2.8rem;
+}
+
+.about-credentials-ivory {
+  font-size: 1rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.about-list-ivory {
+  padding-left: 0;
+}
+
+.about-list-ivory li {
+  display: flex;
+  align-items: flex-start;
+  color: #495057;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.check-icon {
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  margin-right: 12px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.about-profile-image {
+  width: 100%;
+  border-radius: 1rem;
+  transform: rotate(2deg);
+  transition: all 0.4s ease;
+}
+
+.about-profile-image:hover {
+  transform: rotate(0) scale(1.03);
+}
+
+.about-social-icons-ivory .social-icon-about-ivory {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.about-social-icons-ivory .social-icon-about-ivory:hover {
+  background-color: var(--dark-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.team-section-ivory {
+  padding: 6rem 0;
+  background-color: white;
+  border-top: 1px solid #e9ecef;
+}
+
+.team-section-title-ivory {
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800 !important;
+  color: var(--dark-color);
+  font-size: 2.8rem;
+}
+
+.title-underline-ivory {
+  width: 80px;
+  height: 4px;
+  background-color: var(--dark-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.team-card-ivory {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  height: 100%;
+  border: 1px solid #e9ecef;
+  transition: all 0.4s ease;
+}
+
+.team-card-ivory:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  border-color: transparent;
+}
+
+.team-img-ivory {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-name-ivory {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700 !important;
+  color: var(--dark-color);
+  margin-bottom: 0.25rem;
+}
+
+.team-title-ivory {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.team-description-ivory {
+  color: #495057;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 991.98px) {
+  .about-details-section .col-lg-7 {
+    order: 2;
+  }
+  .about-details-section .col-lg-5 {
+    order: 1;
+  }
+  .about-profile-image {
+    margin-bottom: 3rem;
+    transform: rotate(0);
+  }
+  .about-main-title,
+  .about-name-ivory,
+  .team-section-title-ivory {
+    font-size: 2.5rem;
+  }
+}
