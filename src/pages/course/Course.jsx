@@ -4,6 +4,8 @@ import {
   FaWhatsapp,
   FaLinkedinIn,
   FaYoutube,
+  FaChalkboardTeacher,
+  FaBookOpen,
 } from "react-icons/fa";
 import {
   BsClipboardCheck,
@@ -45,6 +47,19 @@ const Course = () => {
     },
   ];
 
+  const features1 = [
+    "Access to Recorded Live Sessions – Revisit classes anytime at your convenience",
+    "Post-Training Support & Career Mentorship – Continued guidance beyond the classroom",
+    "Thorough Coverage of All 5 Domains – With interactive Q&A sessions",
+    "Practical Real-World Case Studies – Understand complex topics through practical examples",
+  ];
+
+  const features2 = [
+    "Trainer-Curated Study Materials – Comprehensive PPTs & short notes tailored for exam preparation",
+    "10 Full-Length Mock Tests – Simulate the exam environment and assess your readiness",
+    "Practice Question Bank – Over 2,500 questions for extensive hands-on practice",
+  ];
+
   return (
     <div className="course-page-ivory">
       <section className="course-hero-section text-center">
@@ -58,7 +73,7 @@ const Course = () => {
       <section className="about-course-section">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-10">
+            <div className="col-lg-10 text-center">
               <h2 className="course-section-title">About this Course</h2>
               <p className="course-intro-text">
                 Unlock your success with 40 hours of power-packed live training
@@ -67,36 +82,38 @@ const Course = () => {
                 mock exams, and dedicated mentorship to guide you every step of
                 the way!
               </p>
-              <ul className="course-features-list list-unstyled mt-4">
-                <li>
-                  <FaCheckCircle className="course-check-icon" />
-                  <span>Access to Recorded Live Sessions</span>
-                </li>
-                <li>
-                  <FaCheckCircle className="course-check-icon" />
-                  <span>Post-Training Support & Career Mentorship</span>
-                </li>
-                <li>
-                  <FaCheckCircle className="course-check-icon" />
-                  <span>Thorough Coverage of All 5 Domains</span>
-                </li>
-                <li>
-                  <FaCheckCircle className="course-check-icon" />
-                  <span>Practical Real-World Case Studies</span>
-                </li>
-                <li>
-                  <FaCheckCircle className="course-check-icon" />
-                  <span>Trainer-Curated Study Materials</span>
-                </li>
-                <li>
-                  <FaCheckCircle className="course-check-icon" />
-                  <span>10 Full-Length Mock Tests</span>
-                </li>
-                <li>
-                  <FaCheckCircle className="course-check-icon" />
-                  <span>Practice Question Bank – Over 2,500 questions</span>
-                </li>
-              </ul>
+            </div>
+          </div>
+          <div className="row justify-content-center mt-4 gy-4">
+            <div className="col-lg-6 d-flex">
+              <div className="feature-card">
+                <div className="feature-card-icon">
+                  <FaChalkboardTeacher />
+                </div>
+                <ul className="list-unstyled m-0">
+                  {features1.map((feature, index) => (
+                    <li key={index}>
+                      <FaCheckCircle className="course-check-icon" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-6 d-flex">
+              <div className="feature-card">
+                <div className="feature-card-icon">
+                  <FaBookOpen />
+                </div>
+                <ul className="list-unstyled m-0">
+                  {features2.map((feature, index) => (
+                    <li key={index}>
+                      <FaCheckCircle className="course-check-icon" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -129,14 +146,14 @@ const Course = () => {
           <h2 className="course-section-title">Secure Your Spot</h2>
           <div className="course-title-underline"></div>
           <div className="pricing-box-ivory mx-auto mt-4">
-            <p>
+            <p className="pricing-date">
               <strong>Course Start Date:</strong> 02 August 2025
             </p>
-            <p>
+            <p className="pricing-timing">
               <strong>Timing:</strong> 08:00 AM to 12:00 PM IST (Sat and Sun)
             </p>
             <hr className="my-3" />
-            <p>
+            <p className="pricing-original-fees">
               <strong>Original Fees:</strong> <del>INR 17000</del>
             </p>
             <p className="final-price-ivory">
@@ -169,25 +186,6 @@ const Course = () => {
           <a href="#" className="recorded-lectures-link-ivory">
             Interested in Recorded Lectures?
           </a>
-        </div>
-      </section>
-
-      <section className="certification-section text-center">
-        <div className="container">
-          <h2 className="course-section-title">Certification</h2>
-          <div className="course-title-underline"></div>
-          <p className="mt-3 mx-auto certification-text-ivory">
-            Upon successful completion of the Preparation training on CISA the
-            candidate will be awarded a certificate of completion from TechEd
-            Academy.
-          </p>
-          <div className="certificate-image-wrapper mx-auto mt-4">
-            <img
-              src="./assets/images/course/certificate.png"
-              alt="Sample Certificate of Completion"
-              className="certificate-img"
-            />
-          </div>
         </div>
       </section>
     </div>

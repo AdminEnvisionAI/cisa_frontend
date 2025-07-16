@@ -5,7 +5,7 @@ import "../../assets/css/about/About.css";
 const About = () => {
   return (
     <div className="about-page-ivory">
-      <section className="about-details-section">
+      <section className="about-details-section mt-5 mb-5 p-5">
         <div className="container">
           <div className="row align-items-center g-5">
             <div className="col-lg-7">

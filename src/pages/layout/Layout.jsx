@@ -8,6 +8,7 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import "../../assets/css/layout/Layout.css";
+import WhatsAppButton from "../../components/WhatsAppButton";
 
 
 const Layout = () => {
@@ -173,6 +174,7 @@ const Layout = () => {
           </div>
         </div>
       </footer>
+      <WhatsAppButton />
     </div>
   );
 };

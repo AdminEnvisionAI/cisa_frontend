@@ -12,6 +12,7 @@ body {
   background-color: var(--bg-ivory);
   font-family: var(--font-body);
   font-weight: 400;
+  font-style: italic;
 }
 
 .bg-ivory {
@@ -64,12 +65,15 @@ h6,
 
 .hero-section {
   min-height: 90vh;
-  background-color: var(--bg-ivory);
+  background-color: #dcdcdc5e; 
 }
+
 
 .hero-heading {
   line-height: 1.3;
   min-height: 160px;
+  font-weight: 400 !important;          
+
 }
 
 .text-gradient {
@@ -157,8 +161,24 @@ h6,
   }
 }
 
+@keyframes scroll-mobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 5));
+  }
+}
+
+.logo-track {
+  display: flex;
+
+  width: calc(500px * 15);
+  animation: scroll 45s linear infinite;
+}
+
 .logo-slide {
-  width: 280px;
+  width: 300px;
   padding: 0 40px;
   display: flex;
   align-items: center;
@@ -166,15 +186,15 @@ h6,
 }
 
 .logo-slide img {
-  max-height: 65px;
-  max-width: 180px;
+  max-height: 320px;
+  max-width: 550px;
   width: auto;
   height: auto;
   transition: all 0.4s ease;
 }
 
 .logo-slide:hover img {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 .footer .social-icon {
@@ -223,7 +243,9 @@ h6,
   height: 2px;
   background-color: var(--dark-color);
 }
-
+.first-card-body{
+  font-size: 20px;
+}
 @media (max-width: 991.98px) {
   .card-horizontal .col-lg-5,
   .card-horizontal .col-lg-7 {
@@ -241,5 +263,20 @@ h6,
     min-height: auto;
     margin-bottom: 2rem;
   }
-  
+  .logo-track {
+    width: calc(200px * 15);
+    animation: scroll-mobile 45s linear infinite;
+  }
+
+  .logo-slide {
+    width: 200px;
+    padding: 0 25px;
+  }
+
+  .logo-slide img {
+    max-height: 100px;
+  }
+  .logo-slide:hover img {
+    transform: scale(1.8);
+  }
 }
